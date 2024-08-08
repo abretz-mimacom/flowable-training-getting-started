@@ -19,6 +19,7 @@ services:
       node.name: flowable-node-01
       cluster.name: flowable-cluster
       xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xmx1g
     ports:
       - 9300:9300
       - 9200:9200
